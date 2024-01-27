@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing a Form </title>
+</head>
+<body>
+    <h1>Pizza Toppings #Check Box</h1>
+
+<div>
+  <input type="checkbox" id="sausage" name="topping" value="sausage">
+  <label for="sausage">Sausage</label>
+</div>
+
+<div>
+  <input type="checkbox" id="onions" name="topping" value="onions">
+  <label for="onions">Onions</label>
+</div>
+
+<div>
+  <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+  <label for="pepperoni">Pepperoni</label>
+</div>
+
+<div>
+  <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+  <label for="mushrooms">Mushrooms</label>
+</div>
+
+
+
+    <h1>Drop Downs</h1>
+    <select name="Car">
+        <option value="mercedes">Mercedes</option>
+        <option value="tesla">Tesla</option>
+        <option value="volvo" selected>Volvo</option>
+        <option value="bmw">BMW</option>
+        <option value="mini">Mini</option>
+        <option value="ford">Ford</option>
+      </select>
+
+
+    <select name="fashion">
+        <optgroup label="Clothing">
+          <option value="t_shirt">T-Shirts</option>
+          <option value="sweater">Sweaters</option>
+          <option value="coats">Coats</option>
+        </optgroup>
+        <optgroup label="Foot Wear">
+          <option value="sneakers">Sneakers</option>
+          <option value="boots">Boots</option>
+          <option value="sandals">Sandals</option>
+        </optgroup>
+      </select>
+
+
+    <h1>Ticket Type #Radio</h1>
+<div>
+  <input type="radio" id="child" name="ticket_type" value="child">
+  <label for="child">Child</label>
+</div>
+
+<div>
+  <input type="radio" id="adult" name="ticket_type" value="adult">
+  <label for="adult">Adult</label>
+</div>
+
+<div>
+  <input type="radio" id="senior" name="ticket_type" value="senior">
+  <label for="senior">Senior</label>
+</div>
+
+
+
+    <div>
+        <label for="username">What's your name?</label>
+        <br>
+        <input type="text"id="username">
+        <br>
+        <label for="age"> How old are you?</label>
+        <br>
+        <input type="date" id="age">
+        <button class="greet-btn">Save</button>
+      </div>
+      
+      
+      <h1 class="greeting" style="font-style: italic;"></h1>
+
+
+      <script>
+        const name = document.querySelector("#username")
+        const dob = document.querySelector("#age")
+const greetMeButton = document.querySelector(".greet-btn")
+const greetingOutput = document.querySelector(".greeting")
+
+greetMeButton.addEventListener('click', (event) => {
+   greetingOutput.innerText = `Hello ${name.value}, You are ${dob.value} years old.`;
+})
+      </script>
+
+<div>
+    <input type="checkbox" id="newsletter" name="news_letter">
+    <label for="newsletter">Send me the news letter</label>
+  </div>
+  <div>
+    <input type="checkbox" id="newsletter" name="news_letter" checked>
+    <label for="newsletter">Send me the news letter</label>
+  </div>
+
+  <button type="reset">Reset</button>
+</body>
+</html>
