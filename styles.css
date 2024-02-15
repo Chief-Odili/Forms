@@ -102,7 +102,7 @@ input{
     height: 80%;
     border:solid 1px #c6ecc6;
     border-radius: 0.5rem;
-    padding-left: 126px;
+    padding-left: 10px;
 }
 input:focus{
     outline: solid blue 1px;
